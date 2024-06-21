@@ -22,6 +22,14 @@ a {
   margin-right: auto;
   margin-left: auto;
 }
+
+.heading-lv2,
+.heading-lv2 a {
+  color: #0d1111;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1.33;
+}
 /* ============ header ============= */
 .header {
   background: #fff;
@@ -344,4 +352,72 @@ header .body {
   font-size: 1rem;
   font-weight: 500;
   line-height: normal;
+}
+/* ------------- features -------------- */
+.feature {
+  margin-top: 70px;
+}
+
+.feature .body-feature {
+  max-width: 1024px;
+  /* background: cyan; */
+  /* padding: 60px 0; */
+  padding-bottom: 60px;
+}
+
+.feature .body-feature .top-tiltle {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.feature .heading-lv2 {
+  margin-top: 18px;
+  max-width: 577px;
+}
+
+.feature .desc {
+  max-width: 590px;
+  margin-top: 18px;
+  color: #767e7e;
+  font-size: 1.8rem;
+  line-height: normal;
+}
+
+.feature .features-list {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature .feature-list .item-title {
+  margin-top: 26px;
+}
+
+.feature .feature-list .item-title a {
+  color: #0d1111;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.feature .item .item-desc {
+  margin-top: 16px;
+  color: #9da6a5;
+  font-size: 1.6rem;
+  line-height: 1.69;
+}
+
+.feature .item:first-child .item-desc {
+  max-width: 168px;
+}
+
+.feature .item:nth-child(2) .item-desc {
+  max-width: 223px;
+}
+
+.feature .item:nth-child(3) .item-desc {
+  max-width: 224px;
 }
