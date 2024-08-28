@@ -89,6 +89,7 @@
   .navbar__link:hover {
     background-color: #00ffff37;
   }
+
   /* khoi hero */
   .hero {
     flex-direction: column;
@@ -154,6 +155,7 @@
     width: 90%;
     text-align: start;
   }
+
 }
 
 /* Tablet */
