@@ -186,17 +186,64 @@
     width: 90%;
     text-align: center;
   }
+  /* team list */
+  .team__list {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+
+  .team-item__thumb {
+    margin: 0 auto;
+  }
+
+  /* install */
+  .install__img {
+    display: none;
+  }
+
+  .install__content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  /* blog */
+  .blog__inner {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .blog__list {
+    order: 1;
+  }
+
+  .blog__content {
+    order: 2;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog__heading {
+    max-width: 90%;
+  }
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  /* footer */
+  .footer-hidden-tablet {
+    display: none;
+  }
+
+  .footer__top {
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+  }
+
+  .show-on-mobile {
+    display: none;
+  }
 }
 
 /* Mobile */
 @media (min-width: 767.98px) {
-}
-/*  */
-
-.footer {
-  display: none;
 }
