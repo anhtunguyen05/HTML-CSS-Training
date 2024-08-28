@@ -92,6 +92,8 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <!-- styles css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <title>Shine smile</title>
   </head>
   <body >
@@ -101,11 +103,14 @@
         <div class="header-top">
           <!-- logo -->
           <a href="./"
-            ><img src="./assets/img/logo.svg" alt="shine smile" class="logo"
+            ><img
+              src="./assets/img/logo.svg"
+              alt="shine smile"
+              class="logo header__logo"
           /></a>
           <!-- nav -->
           <nav class="navbar">
-            <ul class="navbar__list">
+            <ul class="navbar__list" id="navbar__list--pc">
               <li class="navbar__item">
                 <a href="#!" class="navbar__link navbar__link--active">Home</a>
               </li>
@@ -159,6 +164,45 @@
         </section>
       </div>
     </header>
+    <!-- Tablet/mobile header -->
+    <div class="mobile-header">
+      
+      <!-- tablet/mobile menu -->
+      <input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="menu-checkbox" hidden>
+      <label for="menu-checkbox">
+          <svg class="menu-header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="currentColor"
+                  d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+          </svg>
+      </label>
+      
+      <!-- overlay -->
+      <label for="menu-checkbox" class="menu-overlay"></label>
+
+      <!-- menu content -->
+       <div class="menu-drawer">
+        <!-- menu top -->
+        <div class="menu-drawer__top">
+          <!-- logo -->
+          <a href="./"><img src="./assets/img/logo.svg" alt="shine smile" class="logo"></a>
+          <!-- icon close menu -->
+          <label for="menu-checkbox">
+              <svg class="close__menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path fill="currentColor"
+                      d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z" />
+              </svg>
+          </label>
+      </div>
+        <!-- nav mobile -->
+        <ul id="navbar__list--mobile"></ul>
+         <!-- sử dụng js để copy navbar -->
+         <script>
+          const navPC = document.querySelector("#navbar__list--pc");
+          const navMobile = document.querySelector("#navbar__list--mobile");
+          // sao chep
+          navMobile.innerHTML = navPC.innerHTML;
+      </script>
+       </div>
     <!-- main -->
     <main>
       <!-- our service -->
