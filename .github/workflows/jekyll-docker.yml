@@ -17,12 +17,12 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./Practicle-1
-          destination_dir: practicle-1
+          publish_dir: ./Praticle-1
+          destination_dir: http://127.0.0.1:5500/Praticle-1/index.html
 
       - name: Deploy Practicle-2
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./Practicle-2
-          destination_dir: practicle-2
+          destination_dir: http://127.0.0.1:5500/Practicle-2/index.html
