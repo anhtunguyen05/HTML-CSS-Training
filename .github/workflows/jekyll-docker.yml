@@ -31,4 +31,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./Practicle-3
-          destination_dir: practicle-3  # Sets the subdirectory for Practicle-3
+          destination_dir: http://127.0.0.1:5500/Practicle-3/index.html
