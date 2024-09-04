@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --header-bg: #f2f4f9;
+  --choose-color: #ff9d29;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+/* ============== common ================= */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.container {
+  width: 1200px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+.container__hero {
+  width: 1320px;
+  max-width: calc(100% - 48px);
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 243px;
+  padding: 20px 40px;
+  color: #ffffff;
+  background: var(--choose-color);
+  font-family: Open Sans;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 27.24px;
+  clip-path: polygon(0 0, 94% 0, 100% 22%, 100% 100%, 6% 100%, 0 78%);
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 32px;
+  border: 1px solid #ffffff;
+  top: -7px;
+  left: 12px;
+}
+/* ================ header ================ */
+.header {
+  padding-top: 32px;
+  background: var(--header-bg);
+  min-height: 100vh;
+  .header-top {
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  h2 {
+    font-family: Atkinson Hyperlegible;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.56px;
+    text-align: left;
+    color: #020920;
+  }
+}
+
+.navbar__list {
+  display: flex;
+  gap: 36px;
+
+  .navbar__link {
+    display: flex;
+    font-family: Open Sans;
+    color: #bdbdbd;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 19.36px;
+    align-items: center;
+  }
+
+  .navbar__link:hover,
+  .navbar__link--active {
+    color: #ff9d29;
+  }
+
+  .navbar__link--active::before {
+    content: "";
+    width: 32px;
+    display: inline-block;
+    border: 1.3px solid #ff9d29;
+    position: relative;
+    top: 10px;
+    left: 35px;
+  }
+}
+
+.header__button--contact {
+  font-family: Open Sans;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 27.24px;
+  color: #bdbdbd;
+}
+.header__button--contact::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: -6px;
+  left: 7px;
+  width: 16px;
+  border: 1px solid #bdbdbd;
+}
+/* =================== hero ========================== */
+.hero {
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.hero__content {
+  width: 41%;
+  padding: 76px 0;
+  .hero__desc {
+    font-family: Open Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.16em;
+    color: #fa1d1d;
+  }
+  .hero__heading {
+    margin-top: 16px;
+    font-family: Atkinson Hyperlegible;
+    font-size: 98px;
+    font-weight: 700;
+    line-height: 102.9px;
+  }
+}
+.hero__row {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  .btn {
+    min-width: 243px;
+  }
+  span {
+    font-family: Open Sans;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 37.44px;
+    color: #bdbdbd;
+  }
+  .play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 62px;
+    background: #ff9d2933;
+    border: 1px solid var(--choose-color);
+    border-radius: 99px;
+  }
+}
+
+.hero__news {
+  margin-top: 100px;
+
+  .hero__news--heading {
+    font-family: Atkinson Hyperlegible;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 29.04px;
+    color: #fa1d1d;
+  }
+  .hero__news--heading::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 313px;
+    border: 1px dotted #fa1d1d;
+    top: -7px;
+    left: 12px;
+  }
+  .hero__news--desc {
+    margin-top: 16px;
+    font-family: Open Sans;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 27.54px;
+    color: #5b6b7a;
+  }
+}
+
+.hero__media {
+  .hero__image {
+    position: relative;
+  }
+  .hero__media--info {
+    width: 322px;
+    height: 139px;
+    display: flex;
+    background: #020920;
+    position: absolute;
+    right: 0;
+    top: 807px;
+    clip-path: polygon(6% 0, 100% 0, 100% 100%, 0 100%, 0 20%);
+    gap: 20px;
+    pre {
+      margin-left: -76px;
+      width: 216px;
+      padding: 32px 0;
+      font-family: Atkinson Hyperlegible;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 25.2px;
+      color: white;
+      span {
+        color: #fa1d1d;
+      }
+    }
+    .car__info img {
+      position: relative;
+      top: 25px;
+      width: 162.04px;
+      height: 114px;
+    }
+  }
+}
+/* =================== statistic ========================== */
+.statistic {
+  margin-top: -2px;
+  background: #020920;
+}
+.statistic__content {
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    font-family: Open Sans;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 27.54px;
+    color: #ffffff;
+    text-align: center;
+  }
+  h3 {
+    font-family: Atkinson Hyperlegible;
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 77px;
+    color: #ffffff;
+    text-align: center;
+  }
+}
