@@ -412,14 +412,15 @@ a {
   position: relative;
   height: 308px;
   display: flex;
-
   background: #ffffff;
   clip-path: polygon(6% 0, 100% 0, 100% 100%, 0 100%, 0 17%);
+  transition: 0.3s;
   .car__img {
     width: 243px;
     height: 247.17px;
     position: relative;
     top: 52px;
+    transition: 0.3s;
   }
   .car__detail {
     padding: 32px;
@@ -519,6 +520,13 @@ a {
     right: 0;
   }
 }
+.car__item:hover {
+  transform: translateY(-16px);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+  .car__img {
+    transform: scale(1.1);
+  }
+}
 .car__item-2 .price h3,
 .car__item-2 .car__detail .car__detail--bot p,
 .car__item-2 .car__detail .car__detail--bot .car__detail--btn {
@@ -526,4 +534,179 @@ a {
 }
 .car__item-2 .car__list--discount {
   background: #fa1d1d;
+}
+/* =================== feature ========================== */
+.feature {
+  margin-top: 200px;
+}
+.feature__title {
+  margin: 0 auto;
+  text-align: center;
+  h3 {
+    width: 608px;
+    margin: 0 auto;
+  }
+}
+.feature__content {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  h4 {
+    font-family: Atkinson Hyperlegible;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.2px;
+    color: #2e3e4e;
+  }
+  p {
+    margin-top: 12px;
+  }
+  .feature__content--title {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 163px;
+  }
+  .feature__content--left--item {
+    display: flex;
+    gap: 24px;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .item--active {
+    h4 {
+      color: var(--choose-color);
+    }
+  }
+  .feature__content--right--item {
+    display: flex;
+    gap: 24px;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    h4,
+    p {
+      text-align: right;
+    }
+  }
+}
+.feature__content--mid {
+  display: grid;
+  position: relative;
+
+  .car__feature {
+    position: absolute;
+    left: 27.5px;
+    top: 50px;
+  }
+  .car__shadow {
+    position: absolute;
+    top: 190px;
+    left: -100px;
+  }
+}
+/* =================== brand ========================== */
+.brand {
+  margin-top: 200px;
+  padding: 60px 0;
+  background: #020920;
+}
+.brand__list {
+  display: flex;
+  justify-content: space-between;
+}
+.brand--item {
+  display: flex;
+  color: #bdbdbd;
+  align-items: center;
+  gap: 21px;
+  h4 {
+    font-family: Montserrat;
+    font-size: 2.099rem;
+    font-weight: 700;
+    line-height: 25.59px;
+  }
+  p {
+    font-family: Montserrat;
+    font-size: 0.998rem;
+    font-weight: 700;
+    line-height: 12.17px;
+  }
+}
+.breand--item--active {
+  color: var(--choose-color);
+}
+/* =================== brand ========================== */
+.feedback {
+  margin-top: 200px;
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 87px;
+  }
+}
+.feedback__content {
+  .section__heading {
+    margin-top: 16px;
+  }
+  .section__title {
+    margin-top: 32px;
+  }
+  .btn {
+    margin-top: 60px;
+  }
+}
+.feedback__list {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 60px;
+}
+.feedback--item {
+  padding: 32px;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+  transition: 0.25s;
+  .feedback--item--people {
+    display: flex;
+    gap: 16px;
+    h4 {
+      font-family: Atkinson Hyperlegible;
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 23.58px;
+    }
+    p {
+      margin-top: 8px;
+      font-family: Open Sans;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 24px;
+      color: #fa1d1d;
+    }
+  }
+  .feedback--item--para {
+    margin-top: 16px;
+    padding-left: 76px;
+    .section__title {
+      font-size: 1.66rem;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    .rating {
+      display: flex;
+      margin-top: 16px;
+      align-items: center;
+      gap: 18px;
+      strong {
+        color: var(--choose-color);
+      }
+    }
+  }
+}
+.feedback--item:hover {
+  background-color: var(--header-bg);
+  p {
+    color: #5b6b7a;
+  }
 }
