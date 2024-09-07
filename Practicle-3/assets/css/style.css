@@ -527,3 +527,111 @@ a {
 .car__item-2 .car__list--discount {
   background: #fa1d1d;
 }
+/* =================== feature ========================== */
+.feature {
+  margin-top: 200px;
+}
+.feature__title {
+  margin: 0 auto;
+  text-align: center;
+  h3 {
+    width: 608px;
+    margin: 0 auto;
+  }
+}
+.feature__content {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  h4 {
+    font-family: Atkinson Hyperlegible;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.2px;
+    color: #2e3e4e;
+  }
+  p {
+    margin-top: 12px;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27.54px;
+    color: #5b6b7a;
+  }
+  .feature__content--title {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 163px;
+  }
+  .feature__content--left--item {
+    display: flex;
+    gap: 24px;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .item--active {
+    h4 {
+      color: var(--choose-color);
+    }
+  }
+  .feature__content--right--item {
+    display: flex;
+    gap: 24px;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    h4,
+    p {
+      text-align: right;
+    }
+  }
+}
+.feature__content--mid {
+  display: grid;
+  position: relative;
+
+  .car__feature {
+    position: absolute;
+    left: 27.5px;
+    top: 50px;
+  }
+  .car__shadow {
+    position: absolute;
+    top: 190px;
+    left: -100px;
+  }
+}
+/* =================== brand ========================== */
+.brand {
+  margin-top: 200px;
+  padding: 60px 0;
+  background: #020920;
+}
+.brand__list {
+  display: flex;
+  justify-content: space-between;
+}
+.brand--item {
+  display: flex;
+  color: #bdbdbd;
+  align-items: center;
+  gap: 21px;
+  h4 {
+    font-family: Montserrat;
+    font-size: 2.099rem;
+    font-weight: 700;
+    line-height: 25.59px;
+  }
+  p {
+    font-family: Montserrat;
+    font-size: 0.998rem;
+    font-weight: 700;
+    line-height: 12.17px;
+  }
+}
+.breand--item--active {
+  color: var(--choose-color);
+}
