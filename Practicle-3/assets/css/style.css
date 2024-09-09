@@ -146,7 +146,13 @@ a {
 .navbar__list {
   display: flex;
   gap: 36px;
-
+  .navbar__item {
+    position: relative;
+  }
+  .navbar__item {
+    display: flex;
+    align-items: center;
+  }
   .navbar__link {
     display: flex;
     font-family: Open Sans;
@@ -156,10 +162,14 @@ a {
     line-height: 19.36px;
     align-items: center;
   }
-
   .navbar__link:hover,
   .navbar__link--active {
     color: #ff9d29;
+  }
+  .navbar__link:hover {
+    img {
+      color: #ff9d29;
+    }
   }
 
   .navbar__link--active::before {
@@ -167,11 +177,9 @@ a {
     width: 32px;
     display: inline-block;
     border: 1.3px solid #ff9d29;
-    position: relative;
-    top: 10px;
-    left: 35px;
-  }
-  .navbar__link--active::after {
+    position: absolute;
+    top: 25px;
+    align-items: center;
   }
 }
 
@@ -201,6 +209,7 @@ a {
 .hero__content {
   width: 41%;
   padding: 76px 0;
+  position: relative;
   .section__heading {
     margin-top: 16px;
     font-size: 9.8rem;
@@ -255,6 +264,46 @@ a {
   }
   .section__title {
     margin-top: 16px;
+  }
+}
+
+.hero__home {
+  width: 180px;
+  height: 134px;
+  position: absolute;
+  background: white;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  top: -20px;
+  right: 10px;
+  a {
+    position: relative;
+  }
+  h4 {
+    font-family: Open Sans;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 19.36px;
+    text-align: center;
+    color: #bdbdbd;
+  }
+
+  h4:hover {
+    color: var(--choose-color);
+  }
+  .hero__home--active {
+    color: var(--choose-color);
+  }
+
+  .hero__home--active::before {
+    content: "";
+    width: 32px;
+    display: inline-block;
+    border: 1.3px solid #ff9d29;
+    position: absolute;
+    top: 25px;
+    align-items: center;
   }
 }
 
