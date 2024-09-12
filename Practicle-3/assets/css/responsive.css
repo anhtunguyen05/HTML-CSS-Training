@@ -1,0 +1,133 @@
+/* PC */
+@media (min-width: 992px) {
+  .mobile-header {
+    display: none;
+  }
+}
+/* Tablet & mobile */
+@media (max-width: 991.98px) {
+  /* .container {
+    max-width: 624px;
+  } */
+  /* 1. ẩn navbar trên tablet và mobile */
+  .navbar,
+  .hero__home,
+  .header__button {
+    display: none;
+  }
+  /* 2. chuyển logo vào giữa */
+  .header-top {
+    position: relative;
+  }
+  /* .header__logo {
+    position: absolute;
+  } */
+  /*3. căn lại vị trí của menu icon */
+  .menu-header__icon {
+    position: absolute;
+    top: 42px;
+    right: 33px;
+    color: #fff;
+    width: 32px;
+    height: 20px;
+  }
+
+  /* 5. kiểm tra nếu checkbox được check thì hiện overlay */
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* 6. code cho menu drawer */
+  .menu-drawer {
+    position: fixed;
+    background-color: #f2f4f9;
+    inset: 0 0 0 0;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    padding: 48px;
+    padding-top: 32px;
+  }
+  /* 7. kiểm tra nếu checkbox được check hiện menu */
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+  /* 8. menu top */
+  .close__menu {
+    position: absolute;
+    top: 42px;
+    right: 33px;
+    width: 32px;
+    height: 20px;
+  }
+
+  .menu-drawer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar__list {
+    margin-top: 25px;
+    flex-direction: column;
+  }
+
+  #navbar__list--mobile {
+    margin-top: 50px;
+    .navbar__link {
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    .navbar__link--home {
+      color: #fa1d1d;
+    }
+    .hero__home--active {
+      color: #ff9d29;
+    }
+    .hero__home--active::after {
+      content: "";
+      width: 32px;
+      display: inline-block;
+      border: 1.3px solid #ff9d29;
+      position: absolute;
+      top: 25px;
+      left: 0;
+    }
+  }
+
+  .navbar__link--feature a {
+    position: relative;
+    margin-top: 20px;
+    font-family: Open Sans;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.21;
+    color: #bdbdbd;
+  }
+  .button--mobile {
+    display: flex;
+    justify-content: center;
+  }
+  .btn--mobile {
+    /* display: flex; */
+    position: absolute;
+    padding: 20px calc(50% - 100px);
+    width: calc(100% - 33px);
+    bottom: 30px;
+    height: 67px;
+  }
+}
+/* Tablet  */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+/* mobile */
+@media (max-width: 767.98px) {
+}
+.hero,
+.statistic,
+main,
+footer {
+  display: none;
+}

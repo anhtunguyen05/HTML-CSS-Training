@@ -23,13 +23,8 @@ button {
 
 .container {
   width: 1200px;
-  max-width: calc(100% - 48px);
+  max-width: calc(100% - 33px);
   margin: 0 auto;
-}
-
-.container__hero {
-  width: 1320px;
-  max-width: calc(100% - 48px);
 }
 
 a {
@@ -64,7 +59,7 @@ a {
   font-family: Open Sans;
   font-size: 2.2rem;
   font-weight: 400;
-  line-height: 33px;
+  line-height: 1.5;
   letter-spacing: 0.16em;
   color: #fa1d1d;
 }
@@ -72,20 +67,20 @@ a {
   font-family: Atkinson Hyperlegible;
   font-size: 5.2rem;
   font-weight: 700;
-  line-height: 59.8px;
+  line-height: 1.15;
 }
 .section__title {
   font-family: Open Sans;
   font-size: 18px;
   font-weight: 400;
-  line-height: 27.54px;
+  line-height: 1.53;
   color: #5b6b7a;
 }
 .section__heading--small {
   font-family: Atkinson Hyperlegible;
   font-size: 2rem;
   font-weight: 700;
-  line-height: 25.2px;
+  line-height: 1.26;
   color: #2e3e4e;
 }
 .section__heading--small--active {
@@ -98,7 +93,7 @@ a {
   font-family: Open Sans;
   font-size: 2rem;
   font-weight: 700;
-  line-height: 27.24px;
+  line-height: 1.36;
   transition: 0.25s;
 }
 .btn--small::after {
@@ -135,9 +130,9 @@ a {
   gap: 10px;
   h2 {
     font-family: Atkinson Hyperlegible;
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: 700;
-    line-height: 43.56px;
+    line-height: 1.21;
     text-align: left;
     color: #020920;
   }
@@ -159,7 +154,7 @@ a {
     color: #bdbdbd;
     font-size: 1.6rem;
     font-weight: 600;
-    line-height: 19.36px;
+    line-height: 1.21;
     align-items: center;
   }
   .navbar__link:hover,
@@ -182,12 +177,51 @@ a {
     align-items: center;
   }
 }
+.hero__home {
+  width: 180px;
+  height: 134px;
+  position: absolute;
+  background: white;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  top: 46px;
+  right: -50px;
+  a {
+    position: relative;
+  }
+  h4 {
+    font-family: Open Sans;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.21;
+    text-align: center;
+    color: #bdbdbd;
+  }
+
+  h4:hover {
+    color: var(--choose-color);
+  }
+  .hero__home--active {
+    color: var(--choose-color);
+  }
+
+  .hero__home--active::before {
+    content: "";
+    width: 32px;
+    display: inline-block;
+    border: 1.3px solid #ff9d29;
+    position: absolute;
+    top: 25px;
+    align-items: center;
+  }
+}
 
 .header__button--contact {
   font-family: Open Sans;
   font-size: 2rem;
   font-weight: 700;
-  line-height: 27.24px;
+  line-height: 1.36;
   color: #bdbdbd;
 }
 .header__button--contact::after {
@@ -229,7 +263,7 @@ a {
     font-family: Open Sans;
     font-size: 2.4rem;
     font-weight: 400;
-    line-height: 37.44px;
+    line-height: 1.56;
     color: #bdbdbd;
   }
   .play {
@@ -250,7 +284,7 @@ a {
     font-family: Atkinson Hyperlegible;
     font-size: 2.4rem;
     font-weight: 700;
-    line-height: 29.04px;
+    line-height: 1.21;
     color: #fa1d1d;
   }
   .hero__news--heading::after {
@@ -264,46 +298,6 @@ a {
   }
   .section__title {
     margin-top: 16px;
-  }
-}
-
-.hero__home {
-  width: 180px;
-  height: 134px;
-  position: absolute;
-  background: white;
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  align-items: center;
-  top: -20px;
-  right: 10px;
-  a {
-    position: relative;
-  }
-  h4 {
-    font-family: Open Sans;
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 19.36px;
-    text-align: center;
-    color: #bdbdbd;
-  }
-
-  h4:hover {
-    color: var(--choose-color);
-  }
-  .hero__home--active {
-    color: var(--choose-color);
-  }
-
-  .hero__home--active::before {
-    content: "";
-    width: 32px;
-    display: inline-block;
-    border: 1.3px solid #ff9d29;
-    position: absolute;
-    top: 25px;
-    align-items: center;
   }
 }
 
@@ -328,7 +322,7 @@ a {
       font-family: Atkinson Hyperlegible;
       font-size: 2rem;
       font-weight: 700;
-      line-height: 25.2px;
+      line-height: 1.26;
       color: white;
       span {
         color: #fa1d1d;
@@ -356,7 +350,7 @@ a {
     font-family: Open Sans;
     font-size: 1.8rem;
     font-weight: 400;
-    line-height: 27.54px;
+    line-height: 1.53;
     color: #ffffff;
     text-align: center;
   }
@@ -364,7 +358,7 @@ a {
     font-family: Atkinson Hyperlegible;
     font-size: 7rem;
     font-weight: 700;
-    line-height: 77px;
+    line-height: 1.1;
     color: #ffffff;
     text-align: center;
   }
@@ -416,7 +410,7 @@ a {
         font-family: Atkinson Hyperlegible;
         font-size: 1.8rem;
         font-weight: 700;
-        line-height: 23.58px;
+        line-height: 1.31;
         color: #2e3e4e;
       }
       p {
@@ -424,7 +418,7 @@ a {
         font-family: Open Sans;
         font-size: 1.6rem;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 1.5;
         color: #fa1d1d;
       }
     }
@@ -432,7 +426,7 @@ a {
       font-family: WindSong;
       font-size: 3.8rem;
       font-weight: 400;
-      line-height: 58.14px;
+      line-height: 1.53;
       color: #fa1d1d;
     }
   }
@@ -508,7 +502,7 @@ a {
           font-family: Atkinson Hyperlegible;
           font-size: 5.2rem;
           font-weight: 700;
-          line-height: 59.8px;
+          line-height: 1.15x;
         }
         p {
           position: relative;
@@ -516,7 +510,7 @@ a {
           font-family: Open Sans;
           font-size: 1.6rem;
           font-weight: 400;
-          line-height: 24px;
+          line-height: 1.5;
           color: #5b6b7a;
         }
       }
@@ -524,7 +518,7 @@ a {
         font-family: Atkinson Hyperlegible;
         font-size: 2rem;
         font-weight: 700;
-        line-height: 25.2px;
+        line-height: 1.26;
       }
     }
     .car__detail--mid {
@@ -556,7 +550,7 @@ a {
         font-family: Open Sans;
         font-size: 1.4rem;
         font-weight: 400;
-        line-height: 21.42px;
+        line-height: 1.53;
         color: #5b6b7a;
       }
     }
@@ -571,7 +565,7 @@ a {
     font-family: Open Sans;
     font-size: 1.4rem;
     font-weight: 400;
-    line-height: 21.42px;
+    line-height: 1.53;
     color: #ffffff;
     background: #020920;
     right: 0;
@@ -611,7 +605,7 @@ a {
     font-family: Atkinson Hyperlegible;
     font-size: 20px;
     font-weight: 700;
-    line-height: 25.2px;
+    line-height: 1.26;
     color: #2e3e4e;
   }
   p {
@@ -688,7 +682,7 @@ a {
     font-family: Montserrat;
     font-size: 0.998rem;
     font-weight: 700;
-    line-height: 12.17px;
+    line-height: 2.56;
   }
 }
 .breand--item--active {
@@ -730,14 +724,14 @@ a {
       font-family: Atkinson Hyperlegible;
       font-size: 1.8rem;
       font-weight: 700;
-      line-height: 23.58px;
+      line-height: 1.31;
     }
     p {
       margin-top: 8px;
       font-family: Open Sans;
       font-size: 1.6rem;
       font-weight: 400;
-      line-height: 24px;
+      line-height: 1.5;
       color: #fa1d1d;
     }
   }
@@ -747,7 +741,7 @@ a {
     .section__title {
       font-size: 1.66rem;
       font-weight: 400;
-      line-height: 24px;
+      line-height: 1.45;
     }
     .rating {
       display: flex;
@@ -788,7 +782,7 @@ a {
     font-family: Atkinson Hyperlegible;
     font-size: 2rem;
     font-weight: 700;
-    line-height: 25.2px;
+    line-height: 1.26;
   }
   .blog--item--tag {
     display: flex;
@@ -801,7 +795,7 @@ a {
     font-family: Open Sans;
     font-size: 1.4rem;
     font-weight: 400;
-    line-height: 21.42px;
+    line-height: 1.53;
     color: #ffffff;
     background: #fa1d1d;
     clip-path: polygon(0 0, 85% 0, 100% 30%, 100% 100%, 0 100%);
@@ -893,7 +887,7 @@ a {
     font-family: Atkinson Hyperlegible;
     font-size: 1.8rem;
     font-weight: 700;
-    line-height: 23.58px;
+    line-height: 1.31;
     color: var(--choose-color);
   }
   .footer__desc {
@@ -901,7 +895,7 @@ a {
     font-family: Open Sans;
     font-size: 1.6rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5;
   }
 }
 .footer__copyright {
@@ -913,7 +907,7 @@ a {
     font-family: Open Sans;
     font-size: 1.6rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5;
   }
 }
 .footer__copyright--right {
