@@ -152,15 +152,36 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: 80px;
   }
+  /* about */
+  .about {
+    flex-direction: column;
+    padding: 0;
+    width: 81.25%;
+    margin: 200px auto;
+  }
+  .about__media {
+    .about__media--back {
+      width: 100%;
+      height: 370px;
+      object-fit: cover;
+    }
+    .btn-play {
+      top: -30px;
+      left: calc(50% - 30px);
+    }
+  }
 }
+
 /* Tablet  */
 @media (min-width: 768px) and (max-width: 991.98px) {
 }
 /* mobile */
 @media (max-width: 767.98px) {
 }
-
-main,
+.car__list,
+.feature,
+.feedback,
+.blog,
 footer {
   display: none;
 }
