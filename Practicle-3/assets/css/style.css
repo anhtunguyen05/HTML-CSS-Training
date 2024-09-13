@@ -291,20 +291,19 @@ a {
     content: "";
     display: inline-block;
     position: relative;
-    width: 313px;
+    width: calc(99% - 159px);
     border: 1px dotted #fa1d1d;
     top: -7px;
     left: 12px;
   }
   .section__title {
     margin-top: 16px;
+    text-align: left;
   }
 }
 
 .hero__media {
-  .hero__image {
-    position: relative;
-  }
+  position: relative;
   .hero__media--info {
     width: 322px;
     height: 139px;
@@ -312,7 +311,7 @@ a {
     background: #020920;
     position: absolute;
     right: 0;
-    top: 807px;
+    bottom: 0;
     clip-path: polygon(6% 0, 100% 0, 100% 100%, 0 100%, 0 20%);
     gap: 20px;
     pre {
@@ -361,6 +360,12 @@ a {
     line-height: 1.1;
     color: #ffffff;
     text-align: center;
+  }
+  .statistic__content--item--active {
+    p,
+    h3 {
+      color: var(--choose-color);
+    }
   }
 }
 /* =================== about ========================== */
