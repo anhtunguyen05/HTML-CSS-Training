@@ -170,6 +170,24 @@
       left: calc(50% - 30px);
     }
   }
+  /* car list */
+  .car__list {
+    flex-direction: column;
+    .container {
+      width: 81.25%;
+    }
+  }
+  .car__list--top {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .car__list--bot {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .car__list--top--title {
+    min-width: 100%;
+  }
 }
 
 /* Tablet  */
@@ -178,7 +196,7 @@
 /* mobile */
 @media (max-width: 767.98px) {
 }
-.car__list,
+
 .feature,
 .feedback,
 .blog,

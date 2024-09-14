@@ -468,10 +468,13 @@ a {
   justify-content: space-between;
   .car__list--top--title {
     width: 59%;
+    .section__heading {
+      margin-top: 16px;
+    }
   }
 }
 .car__list--top--button {
-  display: flex;
+  display: inline-flex;
   align-items: end;
 }
 .car__list--bot {
