@@ -457,6 +457,11 @@ a {
     top: 70px;
     left: -30px;
   }
+  .about__media--back {
+    width: 611px;
+    height: 573px;
+    object-fit: cover;
+  }
 }
 /* =================== car list ========================== */
 .car__list {
@@ -620,8 +625,8 @@ a {
     margin-top: 12px;
   }
   .feature__content--title {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 163px;
   }
   .feature__content--left--item {
@@ -638,6 +643,7 @@ a {
     }
   }
   .feature__content--right--item {
+    position: relative;
     display: flex;
     gap: 24px;
     img {
@@ -670,21 +676,27 @@ a {
   margin-top: 200px;
   padding: 60px 0;
   background: #020920;
+  overflow: hidden;
+  position: relative;
 }
 .brand__list {
+  position: absolute;
+  top: 25%;
+  left: calc(50% - 720px);
   display: flex;
-  justify-content: space-between;
+  gap: 70.25px;
 }
 .brand--item {
   display: flex;
   color: #bdbdbd;
   align-items: center;
   gap: 21px;
+  min-width: 223.82px;
   h4 {
     font-family: Montserrat;
     font-size: 2.099rem;
     font-weight: 700;
-    line-height: 25.59px;
+    line-height: 1.22;
   }
   p {
     font-family: Montserrat;
@@ -693,7 +705,7 @@ a {
     line-height: 2.56;
   }
 }
-.breand--item--active {
+.brand--item--active {
   color: var(--choose-color);
 }
 /* =================== feedback ========================== */

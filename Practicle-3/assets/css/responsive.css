@@ -3,6 +3,9 @@
   .mobile-header {
     display: none;
   }
+  #feature--mobile {
+    display: none;
+  }
 }
 /* Tablet & mobile */
 @media (max-width: 991.98px) {
@@ -10,6 +13,7 @@
     max-width: 624px;
   } */
   /* 1. ẩn navbar trên tablet và mobile */
+
   .navbar,
   .hero__home,
   .header__button {
@@ -188,6 +192,40 @@
   .car__list--top--title {
     min-width: 100%;
   }
+  /* feature */
+  #feature--pc {
+    display: none;
+  }
+  .feature__content {
+    width: 81.25%;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 32px;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  #feature--mobile .feature__content--title {
+    gap: 32px;
+  }
+  .feature__content--right--item .item--info {
+    h4,
+    p {
+      text-align: left;
+    }
+  }
+  .feature__content--mid {
+    justify-content: center;
+    margin-bottom: 100px;
+    .car__feature {
+      left: 50%;
+      translate: -50% 0;
+    }
+    .car__shadow {
+      left: 50%;
+      translate: -50% 0;
+    }
+  }
+  /* brand */
 }
 
 /* Tablet  */
@@ -197,7 +235,6 @@
 @media (max-width: 767.98px) {
 }
 
-.feature,
 .feedback,
 .blog,
 footer {
