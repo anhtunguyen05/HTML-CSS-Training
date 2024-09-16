@@ -226,6 +226,27 @@
     }
   }
   /* brand */
+  /* feedback */
+  .feedback .container {
+    width: 81.25%;
+    flex-direction: column;
+  }
+  /* blog */
+  .blog .container {
+    width: 81.25%;
+  }
+  .blog__content {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .blog__button .btn {
+    background: #ff9d29;
+    color: white;
+  }
+  .blog .btn::after {
+    border: 1px solid white;
+  }
 }
 
 /* Tablet  */
@@ -235,8 +256,6 @@
 @media (max-width: 767.98px) {
 }
 
-.feedback,
-.blog,
 footer {
   display: none;
 }
