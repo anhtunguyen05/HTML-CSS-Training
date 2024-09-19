@@ -33,7 +33,6 @@ a {
 
 .btn {
   display: inline-block;
-  max-width: 300px;
   padding: 20px 40px;
   color: #ffffff;
   background: var(--choose-color);
