@@ -12,37 +12,37 @@
   /* .container {
     max-width: 624px;
   } */
-  /* 1. ẩn navbar trên tablet và mobile */
 
+  /* common */
+  .btn {
+    text-align: center;
+    gap: 10px;
+    padding: 15px 25px;
+    font-size: 1.6rem;
+  }
+
+  /* 1. ẩn navbar trên tablet và mobile */
   .navbar,
   .hero__home,
   .header__button {
     display: none;
   }
-  /* 2. chuyển logo vào giữa */
+
   .header-top {
-    position: relative;
-  }
-  /* .header__logo {
     position: absolute;
-  } */
-  /*3. căn lại vị trí của menu icon */
+    left: 9.375%;
+  }
+  /* căn lại vị trí của menu icon */
   .menu-header__icon {
     position: absolute;
     top: 42px;
-    right: 33px;
+    right: 9.375%;
     color: #fff;
     width: 32px;
     height: 20px;
   }
 
-  /* 5. kiểm tra nếu checkbox được check thì hiện overlay */
-  .menu-checkbox:checked ~ .menu-overlay {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  /* 6. code cho menu drawer */
+  /* code cho menu drawer */
   .menu-drawer {
     position: fixed;
     background-color: #f2f4f9;
@@ -70,16 +70,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
 
   .navbar__list {
-    margin-top: 25px;
     flex-direction: column;
   }
 
   #navbar__list--mobile {
-    margin-top: 50px;
     .navbar__link {
       margin-top: 40px;
       font-size: 2.4rem;
@@ -113,22 +111,31 @@
     color: #bdbdbd;
   }
   .button--mobile {
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
   }
   .btn--mobile {
-    /* display: flex; */
-    position: absolute;
-    padding: 20px calc(50% - 100px);
-    width: calc(100% - 33px);
-    bottom: 30px;
-    height: 67px;
+    width: calc(100% - 90px);
+    text-align: center;
   }
-
+  /*  */
+  .header__logo {
+    a img {
+      width: 34px;
+      height: 34px;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+  }
   /* khoi hero */
   .hero {
     flex-direction: column;
     gap: 50px;
+    .section__heading {
+      font-size: 7rem;
+    }
   }
   .hero__content {
     width: 81.25%;
@@ -137,6 +144,10 @@
   }
   .hero__row {
     justify-content: center;
+    .play {
+      width: 52px;
+      height: 52px;
+    }
   }
   .hero__news--heading::after {
     width: calc(100% - 160px);
@@ -196,8 +207,10 @@
   #feature--pc {
     display: none;
   }
-  .feature__content {
+  .feature .container {
     width: 81.25%;
+  }
+  .feature__content {
     grid-template-columns: 1fr;
     flex-direction: column;
     gap: 32px;
@@ -268,4 +281,190 @@
 }
 /* mobile */
 @media (max-width: 767.98px) {
+  /* common */
+  .btn {
+    padding: 15px 30px;
+  }
+  .section__heading {
+    font-size: 3.2rem;
+  }
+  .section__title {
+    font-size: 1.6rem;
+  }
+  /*  */
+  .menu-drawer__top {
+    margin-bottom: 30px;
+  }
+  /* menu */
+  #navbar__list--mobile {
+    .navbar__link {
+      margin-top: 0px;
+      font-size: 2rem;
+    }
+    .navbar__link--feature a {
+      font-size: 1.6rem;
+      margin-top: 0;
+    }
+  }
+  /*  */
+  .header-top {
+    left: 6.665%;
+  }
+  /* căn lại vị trí của menu icon */
+  .menu-header__icon {
+    right: 6.665%;
+  }
+  /* hero */
+  .hero {
+    .hero__content {
+      width: 86.67%;
+    }
+    .hero__media .hero__media--info {
+      /* .car__info img {
+        width: 90%;
+      } */
+      pre {
+        font-size: 1.8rem;
+      }
+    }
+    .hero__row {
+      gap: 40px;
+    }
+    .section__heading {
+      font-size: 5.2rem;
+    }
+    .hero__news--heading {
+      font-size: 2rem;
+    }
+    .hero__media pre {
+      font-size: 1.8rem;
+    }
+  }
+  /* statistic */
+  .statistic__content--item {
+    p {
+      font-size: 1.6rem;
+    }
+    h3 {
+      font-size: 5.2rem;
+    }
+  }
+  /* about */
+  .about .container {
+    width: 86.67%;
+  }
+  .about__content--bot .about__content--bot--top {
+    .section__heading--small {
+      font-size: 1.8rem;
+    }
+    .item {
+      gap: 12px;
+    }
+  }
+  .about__content--bot .about__content--bot--low {
+    .item-left--info {
+      h4 {
+        font-size: 1.6rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+    .item-right {
+      font-size: 2.4rem;
+    }
+  }
+  /* car list */
+  .car__list .container {
+    width: 86.67%;
+  }
+  .car__list--bot .car__item .car__img {
+    display: none;
+  }
+  .car__list--bot .car__item {
+    justify-content: center;
+    .car__detail {
+      width: 90%;
+    }
+  }
+  /* feature */
+  #feature--mobile .container {
+    width: 86.67%;
+    .feature__content--mid {
+      .round__shape {
+        width: 100%;
+        height: 365.91px;
+      }
+      .car__feature {
+        width: 100%;
+        height: 331.66px;
+      }
+      .car__shadow {
+        width: 90%;
+        top: calc(190px + 10%);
+      }
+    }
+  }
+  /* feedback */
+  .feedback .container {
+    width: 86.67%;
+  }
+  /* blog */
+  .blog .container {
+    width: 86.67%;
+    .blog--item--layout {
+      display: none;
+    }
+  }
+}
+@media (max-width: 469.98px) {
+  /* hero */
+  .hero__row {
+    .btn {
+      padding: 10px 25px;
+      font-size: 1.4rem;
+    }
+    span {
+      display: none;
+    }
+    .play {
+      width: 52px;
+      height: 52px;
+    }
+  }
+  /* about */
+  .about__content--bot .about__content--bot--top {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+    .section__heading--small {
+      font-size: 1.4rem;
+    }
+    .item {
+      gap: 4px;
+    }
+  }
+  .about__content--bot .about__content--bot--low {
+    .item-left {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .item-left--info {
+      h4 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    .item-right {
+      font-size: 2rem;
+    }
+  }
+  .about__content--bot::after {
+    top: -86px;
+  }
 }
