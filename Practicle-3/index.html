@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- add favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- embed fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+      
+    />
+    <link href="https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+    <!-- reset css -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- responsive css -->
+     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Car Rental</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-top">
+          <!-- logo -->
+          <div class="logo header__logo">
+            <a href="#!"
+              ><img src="./assets/img/wheel-color 1.svg" alt="" class="logo"
+            /></a>
+            <h2>DRIVEWAYS</h2>
+          </div>
+          <!-- nav -->
+          <nav class="navbar">
+            <ul class="navbar__list" id="navbar__list--pc">
+              <li class="navbar__item">
+                <a href="#!" class="navbar__link navbar__link--active"
+                  >HOME
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.4595 9.9596L17.4595 9.95961L17.4614 9.95774C17.5798 9.83512 17.6452 9.67091 17.6437 9.50052C17.6423 9.33009 17.5739 9.16706 17.4534 9.04654C17.3329 8.92603 17.1699 8.85767 16.9994 8.85619C16.829 8.85471 16.6648 8.92022 16.5422 9.03863L16.5422 9.03861L16.5404 9.04045L11.9999 13.5809L7.45953 9.04046L7.45954 9.04045L7.45767 9.03864C7.33507 8.92023 7.17088 8.85472 7.00046 8.8562C6.83003 8.85768 6.667 8.92604 6.54648 9.04656C6.42597 9.16707 6.35761 9.3301 6.35613 9.50053C6.35465 9.67095 6.42016 9.83515 6.53857 9.95774L6.53855 9.95775L6.54039 9.9596L11.5404 14.9596C11.5404 14.9596 11.5404 14.9596 11.5404 14.9596C11.6007 15.02 11.6724 15.0678 11.7512 15.1005C11.8301 15.1332 11.9146 15.15 12 15.15C12.0853 15.15 12.1698 15.1332 12.2487 15.1005C12.3275 15.0678 12.3992 15.02 12.4595 14.9596C12.4595 14.9596 12.4595 14.9596 12.4595 14.9596L17.4595 9.9596Z" fill="currentColor" stroke="currentColor" stroke-width="0.3"/>
+                    </svg>
+                </a>
+                <div class="hero__home">
+                  <a href="#!"><h4>HOME PAGE 01</h4></a>
+                   <a href="#!"><h4 class="hero__home--active">HOME PAGE 02</h4></a>
+                </div>
+              </li>
+              <li class="navbar__item">
+                <a href="#!" class="navbar__link">ABOUT US</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#!" class="navbar__link">VEHICLES</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#!" class="navbar__link"
+                  >FEATURES
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.4595 9.9596L17.4595 9.95961L17.4614 9.95774C17.5798 9.83512 17.6452 9.67091 17.6437 9.50052C17.6423 9.33009 17.5739 9.16706 17.4534 9.04654C17.3329 8.92603 17.1699 8.85767 16.9994 8.85619C16.829 8.85471 16.6648 8.92022 16.5422 9.03863L16.5422 9.03861L16.5404 9.04045L11.9999 13.5809L7.45953 9.04046L7.45954 9.04045L7.45767 9.03864C7.33507 8.92023 7.17088 8.85472 7.00046 8.8562C6.83003 8.85768 6.667 8.92604 6.54648 9.04656C6.42597 9.16707 6.35761 9.3301 6.35613 9.50053C6.35465 9.67095 6.42016 9.83515 6.53857 9.95774L6.53855 9.95775L6.54039 9.9596L11.5404 14.9596C11.5404 14.9596 11.5404 14.9596 11.5404 14.9596C11.6007 15.02 11.6724 15.0678 11.7512 15.1005C11.8301 15.1332 11.9146 15.15 12 15.15C12.0853 15.15 12.1698 15.1332 12.2487 15.1005C12.3275 15.0678 12.3992 15.02 12.4595 14.9596C12.4595 14.9596 12.4595 14.9596 12.4595 14.9596L17.4595 9.9596Z" fill="currentColor" stroke="currentColor" stroke-width="0.3"/>
+                    </svg></a>
+              </li>
+            </ul>
+          </nav>
+          <!-- button -->
+          <div class="header__button">
+            <a href="#!" class="header__button--contact">Contact us</a>
+          </div>
+        </div>`
+      </div>
+      <!-- hero -->
+        <section class="hero">
+          <!-- hero left -->
+          <section class="hero__content">
+            <p class="section__desc">PLAN YOUR TRIP NOW</p>
+            <h1 class="section__heading">EXPLORE THE WORLD WITH US</h1>
+            <div class="hero__row">
+              <a href="" class="btn">Book A Ride</a>
+              <span>OR</span>
+              <a href="" class="play"
+                ><img src="./assets/img/Play - Copy.svg" alt=""
+              /></a>
+            </div>
+            <div class="hero__news">
+              <h3 class="hero__news--heading">WHAT'S NEWS</h3>
+              <p class="section__title">
+                Now You Can Rent A Car With The Various Facilities And
+                Conveniences We Provide.
+              </p>
+            </div>
+            
+              
+          </section>
+          <!-- hero right -->
+          <section class="hero__media">
+            <figure class="hero__image">
+              <img src="./assets/img/Mask group.svg" alt="" />
+            </figure>           
+              <div class="hero__media--info">
+                <pre>
+                  GET <span>10%</span> OFF FOR 
+                  FAMILY CAR 
+                  TYPE</pre
+                >
+                <figure class="car__info">
+                  <img src="./assets/img/Mask group (1).svg" alt="" />
+                  />
+                </figure>
+              </div>
+          </section>
+        </section>
+        <section class="statistic">
+          <section class="statistic__content container">
+            <div class="statistic__content--item">
+              <p>CAR RENTED</p>
+              <h3>240</h3>
+            </div>
+            <div class="statistic__content--item statistic__content--item--active">
+              <p>SATISFIED CLIENTS</p>
+              <h3>235</h3>
+            </div>
+            <div class="statistic__content--item ">
+              <p>YEARS EXPERIENCE</p>
+              <h3>12+</h3>
+            </div>
+            <div class="statistic__content--item">
+              <p>CAR TYPES</p>
+              <h3>18</h3>
+            </div>
+          </section>
+        </section>
+    </header>
+    <!-- Tablet/mobile header -->
+    <div class="mobile-header">
+      <!-- tablet/mobile menu -->
+      <input
+        type="checkbox"
+        name="menu-checkbox"
+        id="menu-checkbox"
+        class="menu-checkbox"
+        hidden
+      />
+      <label for="menu-checkbox">
+        <img class="menu-header__icon" src="./assets/img/Hamburger Menu.svg" alt="">
+      </label>
+
+      <!-- overlay -->
+      <label for="menu-checkbox" class="menu-overlay"></label>
+
+      <!-- menu content -->
+      <div class="menu-drawer">
+        <!-- menu top -->
+        <div class="menu-drawer__top">
+          <!-- logo -->
+          <div class="logo header__logo">
+            <a href="#!"
+              ><img src="./assets/img/wheel-color 1.svg" alt="" class="logo"
+            /></a>
+            <h2>DRIVEWAYS</h2>
+          </div>
+          <!-- icon close menu -->
+          <label for="menu-checkbox">
+            <img class="close__menu" src="./assets/img/exit.svg" alt="">
+          </label>
+        </div>
+        
+        <!-- nav mobile -->     
+          <ul class="navbar__list" id="navbar__list--mobile">
+            <li class="navbar__item">
+              <a href="#!" class="navbar__link navbar__link--home"
+                >HOME PAGE
+              </a>
+              <li class="navbar__link--feature"><a href="#!"><h4>HOME PAGE 01</h4></a></li>
+              <li class="navbar__link--feature"><a href="#!"><h4 class="hero__home--active">HOME PAGE 02</h4></a></li>
+            </li>
+            <li class="navbar__item">
+              <a href="#!" class="navbar__link">ABOUT US</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#!" class="navbar__link">VEHICLES</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#!" class="navbar__link"
+                >FEATURES
+               </a>
+               <li class="navbar__link--feature">
+                <a href="#!">TESTIMONIALS</a>
+               </li>
+               <li class="navbar__link--feature">
+                <a href="#!">OUR TEAM</a>
+               </li>
+               <li class="navbar__link--feature">
+                <a href="#!">BLOG</a>
+               </li>
+               <li class="navbar__link--feature">
+                <a href="#!">BLOG DETAIL</a>
+               </li>
+               <li class="navbar__link--feature">
+                <a href="#!">404 PAGE</a>
+               </li>
+            </li>
+            
+          </ul>
+          <div class="button--mobile"><a class="btn btn--mobile" href="#!">Contact us</a></div>
+
+        <!-- separate ngăn cách  -->
+        <div class="separate"></div>
+      </div>
+    </div>
+
+    <!-- main -->
+     <main>
+      <!-- about -->
+      <section class="about">
+          <!-- about left -->
+          <section class="about__content">
+            <div class="about__content--top">
+              <p class="section__desc">ABOUT US</p>
+              <h3 class="section__heading">PROVIDING RELIABLE CAR RENTALS</h3>
+            </div>
+            <div class="about__content--mid">
+              <p class="section__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+              <p class="section__title low">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="about__content--bot">
+              <div class="about__content--bot--top">
+                <div class="item">
+                  <img src="./assets/img/Icon (3).svg" alt="">
+                  <p class="section__heading--small section__heading--small--active">SAFE & TRUSTED</p>
+                </div>
+                <div class="item">
+                  <img src="./assets/img/Icon (4).svg" alt="">
+                  <p class="section__heading--small">AFFORDABLE PRICE</p>
+                </div>
+              </div>
+              <div class="about__content--bot--low">
+                <div class="item item-left">
+                  <img src="./assets/img/founder.svg" alt="">
+                  <div class="item-left--info">
+                    <h4>JAMES AUSTIN</h4>
+                    <P>Founder & CEO</P>
+                  </div>
+                </div>
+                <div class="item item-right">James Austin</div>
+              </div>
+            </div>
+          </section>
+          <!-- about right -->
+           <section class="about__media">
+            <figure><img class="about__media--back" src="./assets/img/blog.svg" alt=""></figure>
+            <div class="btn-play">
+              <a class="play">
+                <img src="./assets/img/Play.svg" alt="">
+              </a>
+            </div>
+           </section>
+      </section>
+      <!-- car list -->
+      <section class="car__list">
+        <div class="container">
+          <div class="car__list--top">
+            <div class="car__list--top--title">
+              <p class="section__desc">CARS LIST</p>
+              <h3 class="section__heading">CHOOSE THE CAR THAT YOU NEED</h3>
+            </div>
+            <div class="car__list--top--button"><div class="btn">Discover Vehicles</div></div>
+          </div>
+          <div class="car__list--bot">
+            <!-- item-1 -->
+            <section class="car__item car__item-1">
+              <img class="car__img" src="./assets/img/car1.svg" alt="">
+              <div class="car__detail">
+                  <div class="car__detail--top">
+                    <div class="price">
+                      <h3>$69</h3>
+                      <p>/ Day</p>
+                    </div>
+                    <h4>RETRO RAPOROZHETS</h4>
+                  </div>
+                  <div class="car__detail--mid">
+                    <div class="car__detail--mid--item">
+                      <img src="./assets/img/gas-station-outlined.svg" alt="">
+                      <p>Diesel</p>
+                    </div>
+                    <div class="car__detail--mid--item">
+                      <img src="./assets/img/tachometer-outlined.svg" alt="">
+                      <p>5.000 Miles</p>
+                    </div>
+                    <div class="car__detail--mid--item">
+                      <img src="./assets/img/smartcar-outlined.svg" alt="">
+                      <p>Sport</p>
+                    </div>
+                    <div class="car__detail--mid--item">
+                      <img src="./assets/img/hand-controls-outlined.svg" alt="">
+                      <p>Automatic</p>
+                    </div>
+                  </div>
+                  <div class="car__detail--bot">
+                    <p>AVAILABLE</p>
+                    <div class="btn--small">Book now</div>
+                  </div>   
+              </div>
+              <div class="car__list--discount">20% OFF</div>
+            </section>
+            <!-- item 2 -->
+            <section class="car__item car__item-2"><img class="car__img" src="./assets/img/car2.svg" alt="">
+              <div class="car__detail">
+                  <div class="car__detail--top">
+                    <div class="price">
+                      <h3>$79</h3>
+                      <p>/ Day</p>
+                    </div>
+                    <h4>BLACK NISAN GT-R</h4>
+                  </div>
+                  <div class="car__detail--mid">
+                    <div class="car__detail--mid--item">
+                      <img src="./assets/img/gas-station-outlined.svg" alt="">
+                      <p>Diesel</p>
+                    </div>
+                    <div class="car__detail--mid--item">
+                      <img src="./assets/img/tachometer-outlined.svg" alt="">
+                      <p>5.000 Miles</p>
+                    </div>
+                    <div class="car__detail--mid--item">
+                      <img src="./assets/img/smartcar-outlined.svg" alt="">
+                      <p>Sport</p>
+                    </div>
+                    <div class="car__detail--mid--item">
+                      <img src="./assets/img/hand-controls-outlined.svg" alt="">
+                      <p>Automatic</p>
+                    </div>
+                  </div>
+                  <div class="car__detail--bot">
+                    <p>AVAILABLE</p>
+                    <div class="btn--small btn--small--active">Book now</div>
+                  </div>   
+              </div>
+              <div class="car__list--discount">15% OFF</div></section>
+              <!-- item 3 -->
+            <section class="car__item car__item-3"><img class="car__img" src="./assets/img/car3.svg" alt="">
+              <div class="car__detail">
+                  <div class="car__detail--top">
+                    <div class="price">
+                      <h3>$59</h3>
+                      <p>/ Day</p>
+                    </div>
+                    <h4>VOLKSWAGEN PASSAT</h4>
+                  </div>
+                  <div class="car__detail--mid">
+                    <div class="car__detail--mid--item">
+                      <img src="./assets/img/gas-station-outlined.svg" alt="">
+                      <p>Diesel</p>
+                    </div>
+                    <div class="car__detail--mid--item">
+                      <img src="./assets/img/tachometer-outlined.svg" alt="">
+                      <p>5.000 Miles</p>
+                    </div>
+                    <div class="car__detail--mid--item">
+                      <img src="./assets/img/smartcar-outlined.svg" alt="">
+                      <p>Sport</p>
+                    </div>
+                    <div class="car__detail--mid--item">
+                      <img src="./assets/img/hand-controls-outlined.svg" alt="">
+                      <p>Automatic</p>
+                    </div>
+                  </div>
+                  <div class="car__detail--bot">
+                    <p>AVAILABLE</p>
+                    <div class="btn--small">Book now</div>
+                  </div>   
+              </div>
+              <div class="car__list--discount">10% OFF</div></section>
+              <!-- item 4 -->
+            <section class="car__item car__item-4"><img class="car__img" src="./assets/img/car4.svg" alt="">
+              <div class="car__detail">
+                  <div class="car__detail--top">
+                    <div class="price">
+                      <h3>$60</h3>
+                      <p>/ Day</p>
+                    </div>
+                    <h4>BRILLIANCE JUNJE FRV</h4>
+                  </div>
+                  <div class="car__detail--mid">
+                    <div class="car__detail--mid--item">
+                      <img src="./assets/img/gas-station-outlined.svg" alt="">
+                      <p>Diesel</p>
+                    </div>
+                    <div class="car__detail--mid--item">
+                      <img src="./assets/img/tachometer-outlined.svg" alt="">
+                      <p>5.000 Miles</p>
+                    </div>
+                    <div class="car__detail--mid--item">
+                      <img src="./assets/img/smartcar-outlined.svg" alt="">
+                      <p>Sport</p>
+                    </div>
+                    <div class="car__detail--mid--item">
+                      <img src="./assets/img/hand-controls-outlined.svg" alt="">
+                      <p>Automatic</p>
+                    </div>
+                  </div>
+                  <div class="car__detail--bot">
+                    <p>AVAILABLE</p>
+                    <div class="btn--small">Book now</div>
+                  </div>   
+              </div>
+              <div class="car__list--discount">20% OFF</div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- feature -->
+       <section class="feature" id="feature--pc">
+        <div class="container">
+          <div class="feature__title"> 
+            <p class="section__desc">WHY CHOOSE US</p>
+            <h3 class="section__heading">PROVIDING RELIABLE CAR RENTALS</h3>
+          </div>
+          <section class="feature__content">
+            <div class="feature__content--left feature__content--title">
+              <article class="feature__content--left--item">
+                <img src="./assets/img/Icon (5).svg" alt="">
+                <div class="item--info">
+                  <h4>CROSS COUNTRY DRIVE</h4>
+                  <p class="section__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </article>
+              <article class="feature__content--left--item item--active">
+                <img src="./assets/img/Icon (6).svg" alt="">
+                <div class="item--info">
+                  <h4>NO HIDDEN CHARGE</h4>
+                  <p class="section__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </article>
+            </div>
+            <div class="feature__content--mid">
+              <img class="round-shape" src="./assets/img/Round Shape.svg" alt="">
+              <img class="car__feature" src="./assets/img/Car(feature).svg" alt="">
+              <img class="car__shadow" src="./assets/img/Shadow.svg" alt="">
+            </div>
+            <div class="feature__content--right feature__content--title">
+            <article class="feature__content--right--item">
+              <div class="item--info">
+                <h4>RESERVE ANYTIME</h4>
+                <p class="section__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <img src="./assets/img/Icon (7).svg" alt="">
+            </article>
+            <article class="feature__content--right--item ">
+              <div class="item--info">
+                <h4>24/7 SUPPORT</h4>
+                <p class="section__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <img src="./assets/img/Icon (8).svg" alt="">
+            </article>
+            </div>
+          </section>
+        </div>
+        <!-- brand -->
+        <div class="brand">
+          <div class="brand__list">
+            <div class="brand--item">
+              <img src="./assets/img/XMLID_64_.svg" alt="">
+              <div class="brand--item--content">
+                <h4>TECHBRAND</h4>
+                <p>YOUR TAGLINE GOES HERE</p>
+              </div>
+            </div>
+            <div class="brand--item">
+              <img src="./assets/img/XMLID_82_.svg" alt="">
+              <div class="brand--item--content">
+                <h4>TECHBRAND</h4>
+                <p>YOUR TAGLINE GOES HERE</p>
+              </div>
+            </div>
+            <div class="brand--item brand--item--active">
+              <img src="./assets/img/XMLID_32_.svg" alt="">
+              <div class="brand--item--content">
+                <h4>TECHBRAND</h4>
+                <p>YOUR TAGLINE GOES HERE</p>
+              </div>
+            </div>
+            <div class="brand--item">
+              <img src="./assets/img/XMLID_9_.svg" alt="">
+              <div class="brand--item--content">
+                <h4>TECHBRAND</h4>
+                <p>YOUR TAGLINE GOES HERE</p>
+              </div>
+            </div>
+            <div class="brand--item">
+              <img src="./assets/img/XMLID_48_.svg" alt="">
+              <div class="brand--item--content">
+                <h4>TECHBRAND</h4>
+                <p>YOUR TAGLINE GOES HERE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+       <!-- feature -->
+       <section class="feature" id="feature--mobile">
+        <div class="container">
+          <div class="feature__title"> 
+            <p class="section__desc">WHY CHOOSE US</p>
+            <h3 class="section__heading">PROVIDING RELIABLE CAR RENTALS</h3>
+          </div>
+          <section class="feature__content">
+            <div class="feature__content--mid">
+              <img class="round__shape" src="./assets/img/Round Shape.svg" alt="">
+              <img class="car__feature" src="./assets/img/Car(feature).svg" alt="">
+              <img class="car__shadow" src="./assets/img/Shadow.svg" alt="">
+            </div>
+            <div class="feature__content--left feature__content--title">
+              <article class="feature__content--left--item">
+                <img src="./assets/img/Icon (5).svg" alt="">
+                <div class="item--info">
+                  <h4>CROSS COUNTRY DRIVE</h4>
+                  <p class="section__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </article>
+              <article class="feature__content--left--item item--active">
+                <img src="./assets/img/Icon (6).svg" alt="">
+                <div class="item--info">
+                  <h4>NO HIDDEN CHARGE</h4>
+                  <p class="section__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </article>
+            </div>
+            <div class="feature__content--right feature__content--title">
+            <article class="feature__content--right--item">
+              <img src="./assets/img/Icon (7).svg" alt="">
+              <div class="item--info">
+                <h4>RESERVE ANYTIME</h4>
+                <p class="section__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </article>
+            <article class="feature__content--right--item ">
+              <img src="./assets/img/Icon (8).svg" alt="">
+              <div class="item--info">
+                <h4>24/7 SUPPORT</h4>
+                <p class="section__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </article>
+            </div>
+          </section>
+        </div>
+        <!-- brand -->
+        <div class="brand">
+          <div class="brand__list">
+            <div class="brand--item">
+              <img src="./assets/img/XMLID_64_.svg" alt="">
+              <div class="brand--item--content">
+                <h4>TECHBRAND</h4>
+                <p>YOUR TAGLINE GOES HERE</p>
+              </div>
+            </div>
+            <div class="brand--item">
+              <img src="./assets/img/XMLID_82_.svg" alt="">
+              <div class="brand--item--content">
+                <h4>TECHBRAND</h4>
+                <p>YOUR TAGLINE GOES HERE</p>
+              </div>
+            </div>
+            <div class="brand--item brand--item--active">
+              <img src="./assets/img/XMLID_32_.svg" alt="">
+              <div class="brand--item--content">
+                <h4>TECHBRAND</h4>
+                <p>YOUR TAGLINE GOES HERE</p>
+              </div>
+            </div>
+            <div class="brand--item">
+              <img src="./assets/img/XMLID_9_.svg" alt="">
+              <div class="brand--item--content">
+                <h4>TECHBRAND</h4>
+                <p>YOUR TAGLINE GOES HERE</p>
+              </div>
+            </div>
+            <div class="brand--item">
+              <img src="./assets/img/XMLID_48_.svg" alt="">
+              <div class="brand--item--content">
+                <h4>TECHBRAND</h4>
+                <p>YOUR TAGLINE GOES HERE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+       <!-- feedback -->
+       <section class="feedback">
+        <div class="container">
+          <div class="feedback__content">
+            <p class="section__desc">TESTIMONIALS</p>
+            <h4 class="section__heading">REVIEW BY OUR CLIENTS</h4>
+            <p class="section__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="btn">Discover more</div>
+          </div>
+          <section class="feedback__list">
+            <article class="feedback--item">
+              <div class="feedback--item--people">
+                <img src="./assets/img/fb.svg" alt="">
+                <div class="feedback--item--people--name">
+                  <h4>AARON CALDWELL</h4>
+                  <P>Freelancer</P>
+                </div>
+              </div>
+              <div class="feedback--item--para">
+                <p class="section__title">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam“</p>
+                <div class="rating">
+                  <img src="./assets/img/Stars.svg" alt="">
+                  <span><strong>5.0 </strong>/ 5.0</span>
+                  
+                </div>
+              </div>
+            </article>
+            <article class="feedback--item">
+              <div class="feedback--item--people">
+                <img src="./assets/img/fb2.svg" alt="">
+                <div class="feedback--item--people--name">
+                  <h4>AMANDA BEATRIX</h4>
+                  <P>Lawyer</P>
+                </div>
+              </div>
+              <div class="feedback--item--para">
+                <p class="section__title">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam“</p>
+                <div class="rating">
+                  <img src="./assets/img/Stars.svg" alt="">
+                  <span><strong>5.0 </strong>/ 5.0</span>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+       </section>
+       <!-- blog -->
+       <section class="blog">
+        <div class="container">
+          <div class="blog__top">
+            <p class="section__desc">BLOG & NEWS</p>
+            <h3 class="section__heading">OUR RECENTLY POST</h3>
+          </div>
+          <section class="blog__content">
+            <article class="blog--item">
+              <img class="blog--item--back" src="./assets/img/blog1.svg" alt="">
+              <div class="blog--item--tag">Rent tips</div>
+              <div class="blog--item--overview">
+                <h4>A COMPLETE GUIDE ON HOW NOT TO BE ACCUSED OF STEALING A RENTAL CAR</h4>
+                <p class="section__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                <div class="blog--item--detail">
+                  <div class="blog--item--writter">
+                    <img src="./assets/img/writter.svg" alt="">
+                    <p>Abigail Barnes</p>
+                  </div>
+                  <div class="blog--item--layout">
+                    <img src="./assets/img/confirm-booking-outlined.svg" alt="">
+                    <p>10 March 2024</p>
+                  </div>
+                  <div class="btn--small btn--small--active">Read more</div>
+                </div>
+              </div>
+            </article>
+            <article class="blog--item">
+              <img class="blog--item--back" src="./assets/img/blog2.svg" alt="">
+              <div class="blog--item--tag blog--item--tag--2">News</div>
+              <div class="blog--item--overview">
+                <h4>TOP 5 MOST PRETIGIOUS SELF-DRIVE CAR RENTAL SERVICES IN TOWN</h4>
+                <p class="section__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                <div class="blog--item--detail">
+                  <div class="blog--item--writter">
+                    <img src="./assets/img/writter.svg" alt="">
+                    <p>Abigail Barnes</p>
+                  </div>
+                  <div class="blog--item--layout">
+                    <img src="./assets/img/confirm-booking-outlined.svg" alt="">
+                    <p>12 March 2024</p>
+                  </div>
+                  <div class="btn--small">Read more</div>
+                </div>
+            </div>
+            </article>
+          </section>
+          <div class="blog__button"><div class="btn">Discover More Blog</div></div>
+        </div>
+       </section>
+     </main>
+     <!-- footer -->
+     <footer class="footer">
+      <div class="container">
+        <div class="footer__list">
+          <div class="footer__column">
+            <div class="logo">
+              <a href="#!"
+                ><img src="./assets/img/wheel-color 2.svg" alt="" class="logo"
+              /></a>
+              <h2>DRIVEWAYS</h2>
+            </div>
+            <p class="footer__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <pre><p class="footer__desc">FB     -     IG     -     LI     -     YT     -     TW</p></pre>
+          </div>
+          <div class="footer__column">
+            <div class="footer__title">
+              <img src="./assets/img/Vector.svg" alt="">
+              <h4>WORKING HOURS</h4>
+            </div>
+            <p class="footer__desc">Mon - Fri : 09:00 AM - 09:00 PM</p>
+            <p class="footer__desc">Sat : 09:00 AM - 07:00 PM</p>
+            <p class="footer__desc">Sun : Closed</p>
+          </div>
+          <div class="footer__column">
+            <div class="footer__title">
+              <img src="./assets/img/Group 1000001767.svg" alt="">
+              <h4>QUICK CONTACT</h4>
+            </div>
+            <p class="footer__desc">Office : 42 Marine Parade, Australia</p>
+            <p class="footer__desc">Mail : info@8pxlstudio.com</p>
+            <p class="footer__desc">Phone : +0123456789</p>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p>Copyright © 2025 Driveways. All Rights Reserved.</p>
+          <div class="footer__copyright--right">
+            <p class="footer__copyright-text">Privacy Policy</p>
+            <p>Terms of Service</p>
+          </div>
+        </div>
+      </div>
+     </footer>
+  </body>
+</html>
